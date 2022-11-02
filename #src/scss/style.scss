@@ -1,0 +1,174 @@
+@use "sass:math";
+//<МИКСИНЫ>===============================================================================================
+@import "mixins";
+//</МИКСИНЫ>===============================================================================================
+
+//<ШРИФТЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+//&display=swap&subset=cyrillic-ext
+@import "fonts";
+//</Подключаем шрифты>=======================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: "Montserrat";
+$fontSize: 16;
+//</Шрифт по умолчанию>==========================================================================================
+
+:root {
+	--main-color: #EF0573;
+	--light-color: #FF9BB6;
+	--bg-color: #FEE8EE;
+	--black-color: #101010;
+}
+
+//</ШРИФТЫ>=======================================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+.page {
+	flex: 1 1 auto;
+}
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+
+.null-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 24px 55px;
+	font-size: 20px;
+	border-radius: 250px;
+	transition: all .3s ease;
+	z-index: 2;
+	.icon {
+		margin-right: 12px;
+	}
+}
+
+.main-btn {
+	background: var(--main-color);
+	color: #fff;
+	&:hover {
+		background: var(--light-color);
+		color: #fff;
+	}
+}
+
+.second-btn {
+	color: var(--black-color);
+	box-shadow: 0 0 0 1px var(--black-color);
+	&:hover {
+		background: var(--black-color);
+		color: #fff;
+	}
+}
+
+.block-head {
+	margin-bottom: 45px;
+	&__heading {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 45px;
+		line-height: 55px;
+		color: #000000;
+		margin-bottom: 15px;
+	}
+	&__subheading {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 29px;
+		color: #555555;
+	}
+	&.text-centered {
+		text-align: center;
+	}
+}
+
+body {
+	&::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: #d1d1d1;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: var(--main-color);
+	}
+}
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+@import "fancybox";
+@import "bootstrap";
+@import "slick-slider";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+
+.slick-arrow {
+	width: 50px;
+	height: 50px;
+	background: var(--black-color);
+	border-radius: 250px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 4;
+	font-size: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:before {
+		font-family: 'fontawesome';
+		font-size: 12px;
+		color: #fff;
+	}
+	&.slick-prev {
+		left: 0;
+		right: auto;
+		&:before {
+			content: '\f060';
+		}
+	}
+	&.slick-next {
+		right: 0;
+		left: auto;
+		&:before {
+			content: '\f061';
+		}
+	}
+	&:hover {
+		background: var(--main-color);
+	}
+}
+
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+@import "null";
+@import "header";
+@import "footer";
+@import "modals";
+@import "main-box";
+@import "advantage-cards";
+@import "price-box";
+@import "staff-box";
+@import "gallery-box";
+@import "reviews-box";
+@import "social-btn-box";
+@import "statick-form";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ Адаптива>=========
+@import "responsive";
+//</ПОДКЛЮЧЕНИЕ Адаптива>=====
+

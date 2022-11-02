@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220913130654">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css?_v=20220913130654"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header site-header">
+			<a href="#" class="site-logo">
+				<img src="img/site-logo.png?_v=1663056414353" alt="">
+			</a>
+			<div class="header-address">
+				<div class="header-address__text">г.Санкт-Петербург, Ул. Адмирала Коновалова 2-4</div>
+				<button class="header-address__map" value="Посмотреть на карте" data-bs-toggle="modal"
+					data-bs-target="#modalMap">Посмотреть на карте</button>
+			</div>
+			<div class="header-contacts">
+				<a href="#" class="header-contacts__btn">
+					<span class="icon">
+						<img src="img/ws.svg?_v=1663056414353" alt="">
+					</span>
+					<span class="text">Написать в Whatsapp</span>
+				</a>
+				<div class="header-contacts-phone">
+					<span class="header-contacts-phone__description">Ежедневно с 10.00 до 20.00</span>
+					<a href="tel:8(921)937-07-25" class="header-contacts-phone__link">8(921)937-07-25</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="main-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-xxl-6 col-xl-7 col-lg-6">
+							<div class="main-box-content">
+								<div class="main-box__image">
+									<img src="img/main-image.jpg?_v=1663056414353" alt="">
+								</div>
+								<h1 class="main-box__heading">Студия маникюра <br>и педикюра</h1>
+								<h2 class="main-box__subheading">Дизайн ногтей в различных техниках
+									<br>и с использованием разнообразного декора
+								</h2>
+								<div class="main-box__btns">
+									<button class="null-btn main-btn" value="Записаться" data-bs-toggle="modal"
+										data-bs-target="#modalCallBack">Записаться</button>
+									<a href="#gallery-box" class="null-btn second-btn">Посмотреть работы</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-box-bg-elem">
+					<img src="img/leaf.png?_v=1663056414353" alt="">
+				</div>
+			</section>
+			<section class="advantage-cards">
+				<div class="container">
+					<div class="row advantage-cards-body">
+						<div class="col-lg-6">
+							<div class="advantage-cards-body__item">
+								<span class="icon">
+									<i class="fa-sharp fa-solid fa-shield-halved"></i>
+								</span>
+								<h3 class="card-title">Безопасность процесса</h3>
+								<p class="card-text">
+									Крафт-пакет с инструментом мастер открывает только при вас. Для вашей безопасности используем все
+									расходные
+									материалы только один раз. Сменные абразивы для пилок и бафов. Работают в перчатках и масках.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="advantage-cards-body__item">
+								<span class="icon">
+									<i class="fa-solid fa-spray-can-sparkles"></i>
+								</span>
+								<div class="card-title">Чистота пространства</div>
+								<p class="card-text">
+									Для вашей безопасности и гигиенической частоты мы используем маникюрные пылесосы, быстрое всасывание
+									опилила
+									и кожи не даёт распределиться вокруг вас, что позволяет во время процедуры наслаждаться чистотой.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="price-box">
+				<div class="container">
+					<div class="block-head">
+						<h2 class="block-head__heading">Услуги и цены</h2>
+						<h3 class="block-head__subheading">Мы делаем, Вы - восхищаетесь!</h3>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<ul class="tabs clearfix" data-tabgroup="price-box-tabs">
+								<li><a href="#tab1" class="active">Дизайн</a></li>
+								<li><a href="#tab2">Наращивание</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-8">
+							<div id="price-box-tabs" class="tabgroup">
+								<div id="tab1">
+									<ul class="price-box-list">
+										<li class="price-box-list__item">
+											<h4 class="title">Френч 1шт / все ногти</h4>
+											<span class="price">60 / 600</span>
+										</li>
+										<li class="price-box-list__item">
+											<h4 class="title">Лунки 1шт / все ногти</h4>
+											<span class="price">60 / 600</span>
+										</li>
+										<li class="price-box-list__item">
+											<h4 class="title">Втирка 1шт / все ногти</h4>
+											<span class="price">75 / 500</span>
+										</li>
+										<li class="price-box-list__item">
+											<h4 class="title">Растяжка блестками гель лак 1шт / все ногти</h4>
+											<span class="price">50 / 400</span>
+										</li>
+										<li class="price-box-list__item">
+											<h4 class="title">Растяжка блестками гель 1шт / все ногти</h4>
+											<span class="price">100 / 500</span>
+										</li>
+										<li class="price-box-list__item">
+											<h4 class="title">Лента 1шт</h4>
+											<span class="price">50</span>
+										</li>
+										<li class="price-box-list__item">
+											<h4 class="title">Стразы 1шт / 2-10шт / от 100шт</h4>
+											<span class="price">50/100/от 200</span>
+										</li>
+										<li class="price-box-list__item">
+											<h4 class="title">Инкрустация 1 ноготь</h4>
+											<span class="price">от 200</span>
+										</li>
+										<li class="price-box-list__item">
+											<h4 class="title">Бульонки на ногте</h4>
+											<span class="price">50</span>
+										</li>
+									</ul>
+								</div>
+								<div id="tab2">
+									<ul class="price-box-list">
+										<li class="price-box-list__item">
+											<h4 class="title">Френч 1шт / все ногти</h4>
+											<span class="price">60 / 600</span>
+										</li>
+										<li class="price-box-list__item">
+											<h4 class="title">Лунки 1шт / все ногти</h4>
+											<span class="price">60 / 600</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="price-box-description">
+						<p class="price-box-description__text">* Цены указаны в рублях</p>
+						<p class="price-box-description__text">** Рассценки носят информационный характер, более подробно уточняйте
+							на
+							месте или по телефону</p>
+					</div>
+				</div>
+			</section>
+			<section class="staff-box">
+				<div class="container" style="z-index: 4;">
+					<div class="block-head text-centered">
+						<h2 class="block-head__heading">Наши специалисты</h2>
+						<h3 class="block-head__subheading">Доверьтесь лучшим и запишитесь уже сейчас!</h3>
+					</div>
+					<div class="row staff-box-body">
+						<div class="col-lg-4">
+							<div class="staff-box-body__item">
+								<div class="img-convert">
+									<img src="img/staff-01.jpg?_v=1663056414353" alt="">
+								</div>
+								<span class="label label-vacation">в отпуске</span>
+								<div class="staff-name">Тоня</div>
+								<button class="null-btn main-btn" value="Записаться" data-bs-toggle="modal"
+									data-bs-target="#modalCallBack">Записаться</button>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="staff-box-body__item">
+								<div class="img-convert">
+									<img src="img/staff-02.jpg?_v=1663056414353" alt="">
+								</div>
+								<div class="staff-name">Алена</div>
+								<button class="null-btn main-btn" value="Записаться" data-bs-toggle="modal"
+									data-bs-target="#modalCallBack">Записаться</button>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="staff-box-body__item">
+								<div class="img-convert">
+									<img src="img/staff-03.jpg?_v=1663056414353" alt="">
+								</div>
+								<span class="label label-vacation">в отпуске</span>
+								<div class="staff-name">Алла</div>
+								<button class="null-btn main-btn" value="Записаться" data-bs-toggle="modal"
+									data-bs-target="#modalCallBack">Записаться</button>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="staff-box-body__item">
+								<div class="img-convert">
+									<img src="img/staff-03.jpg?_v=1663056414353" alt="">
+								</div>
+								<span class="label label-vacation">в отпуске</span>
+								<div class="staff-name">Алла</div>
+								<button class="null-btn main-btn" value="Записаться" data-bs-toggle="modal"
+									data-bs-target="#modalCallBack">Записаться</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="gallery-box" id="gallery-box">
+				<div class="container" style="z-index: 4;">
+					<div class="block-head text-centered">
+						<h2 class="block-head__heading">Наши работы</h2>
+						<h3 class="block-head__subheading">мы используем аппаратную и комбинированную технику</h3>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row gallery-box-body">
+						<div class="col-lg-2">
+							<a href="img/gall-01.jpg" class="gallery-box-body__item" data-fancybox="">
+								<img src="img/gall-01.jpg?_v=1663056414353" alt="">
+							</a>
+						</div>
+						<div class="col-lg-2">
+							<a href="img/gall-02.jpg" class="gallery-box-body__item" data-fancybox="">
+								<img src="img/gall-02.jpg?_v=1663056414353" alt="">
+							</a>
+						</div>
+						<div class="col-lg-2">
+							<a href="img/gall-03.jpg" class="gallery-box-body__item" data-fancybox="">
+								<img src="img/gall-03.jpg?_v=1663056414353" alt="">
+							</a>
+						</div>
+						<div class="col-lg-2">
+							<a href="img/gall-04.jpg" class="gallery-box-body__item" data-fancybox="">
+								<img src="img/gall-04.jpg?_v=1663056414353" alt="">
+							</a>
+						</div>
+						<div class="col-lg-2">
+							<a href="img/gall-05.jpg" class="gallery-box-body__item" data-fancybox="">
+								<img src="img/gall-05.jpg?_v=1663056414353" alt="">
+							</a>
+						</div>
+						<div class="col-lg-2">
+							<a href="img/gall-03.jpg" class="gallery-box-body__item" data-fancybox="">
+								<img src="img/gall-03.jpg?_v=1663056414353" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="gallery-box-btn">
+					<a href="#" class="null-btn main-btn">
+						<span class="icon"><i class="fa-brands fa-instagram"></i></span>
+						<span class="text">Посмотреть в инстаграм</span>
+					</a>
+				</div>
+			</section>
+			<section class="reviews-box">
+				<div class="container" style="z-index: 4;">
+					<div class="block-head text-centered">
+						<h2 class="block-head__heading">Отзывы клиентов</h2>
+					</div>
+					<div class="reviews-box-slider">
+						<a href="img/review-01.jpg" class="reviews-box-slider__item" data-fancybox="">
+							<img src="img/review-01.jpg?_v=1663056414353" alt="">
+						</a>
+						<a href="img/review-01.jpg" class="reviews-box-slider__item" data-fancybox="">
+							<img src="img/review-01.jpg?_v=1663056414353" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="reviews-box-phone">
+					<img src="img/phone_bg.png?_v=1663056414353" alt="">
+				</div>
+			</section>
+			<section class="social-btn-box">
+				<div class="container">
+					<div class="block-head text-centered">
+						<h2 class="block-head__heading">Следите за новостями в соц.сетях</h2>
+					</div>
+					<div class="social-btn-box-body">
+						<a href="#" class="social-btn-box-body__item">
+							<span class="icon">
+								<img src="img/instagram.svg?_v=1663056414353" alt="">
+							</span>
+							<span class="text">@instagram</span>
+						</a>
+						<a href="#" class="social-btn-box-body__item">
+							<span class="icon">
+								<img src="img/vk.svg?_v=1663056414353" alt="">
+							</span>
+							<span class="text">@vkontakte</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="statick-form">
+				<div class="container">
+					<div class="block-head text-centered">
+						<h2 class="block-head__heading">Хотите выглядеть превосходно?</h2>
+						<h3 class="block-head__subheading">Запишитесь на бесплатную <br>консультацию с нашим арт-директорм!</h3>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-xl-7 col-lg-10">
+							<div class="statick-form-body">
+								<form action="">
+									<div class="statick-form-body__item">
+										<input type="text" placeholder="Ваше имя">
+										<input type="phone" placeholder="Телефон" required>
+									</div>
+									<label class="label">
+										<input type="checkbox">
+										<span class="text">Нажимая кнопку “Записаться” вы соглашаетесь с политикой обработки персональных
+											данных.</span>
+									</label>
+									<input type="submit" class="null-btn main-btn" value="Записаться">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer site-footer">
+			<div class="container">
+				<div class="site-footer__left">
+					<div class="site-logo">
+						<img src="img/site-logo-mini.png?_v=1663056414353" alt="20nail">
+					</div>
+					<div class="footer-address">
+						<div class="footer-address__text">г.Санкт-Петербург, <br>Ул. Адмирала Коновалова 2-4</div>
+						<button class="footer-address__map" value="Посмотреть на карте" data-bs-toggle="modal"
+							data-bs-target="#modalMap">Посмотреть на карте</button>
+					</div>
+				</div>
+				<div class="site-footer__right">
+					<div class="footer-phone">
+						<div class="footer-phone__description">Ежедневно с 10.00 до 20.00</div>
+						<a href="tel:8(921)937-07-25" class="footer-phone__link">8(921)937-07-25</a>
+					</div>
+					<a href="#" class="privacy-link">Политика конфиденциальности</a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="footer-copyright">
+					<span class="copyright">Copyright © 2021 - 2022 Студия 20</span>
+					<span class="dev-copyright">
+						<div class="dev-copyright__text">Разработано:</div>
+						<a href="https://yaco.website" class="dev-copyright__link" target="_blank">yaco.website</a>
+					</span>
+				</div>
+			</div>
+		</footer>
+		<!-- Модальное окно (Форма записи) -->
+		<div class="modal fade modal-call-back" id="modalCallBack" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					<div class="modal-body">
+						<div class="modal-call-back-form">
+							<form action="">
+								<input type="text" placeholder="Ваше имя">
+								<input type="phone" placeholder="Телефон" required>
+								<input type="date" placeholder="Введите дату">
+								<input type="time" placeholder="Введите дату">
+								<label class="label">
+									<input type="checkbox">
+									<div class="text">Нажимая кнопку “Записаться” вы соглашаетесь с политикой обработки персональных
+										данных.
+									</div>
+								</label>
+								<input type="submit" class="null-btn main-btn" value="Записаться">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Модальное окно (Карта) -->
+		<div class="modal fade modal-map" id="modalMap" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					<div class="modal-body">
+						<div class="modal-map-body">
+							<iframe
+								src="https://yandex.ru/map-widget/v1/?um=constructor%3Af49f36712d31cb2cfe213d65eabed4b432ec6949728262de36e142239f7462f9&amp;source=constructor"
+								width="100%" height="550" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/vendors.min.js?_v=20220913130654"></script>
+	<script src="js/app.min.js?_v=20220913130654"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+.statick-form {
+	padding: 70px 0;
+}
+
+.statick-form-body {
+	border-radius: 20px;
+	padding: 40px 60px;
+	background: var(--bg-color);
+	input {
+		flex: 1 1 auto;
+		border-radius: 10px;
+		border: none;
+		padding: 16px 24px;
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+	}
+	&__item {
+		display: flex;
+		margin: 0 -5px 10px;
+		input {
+			margin: 5px;
+		}
+	}
+	.label {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: #554455;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	input[type="submit"] {
+		border-radius: 250px;
+		margin-top: 15px;
+		padding: 24px 55px;
+	}
+}

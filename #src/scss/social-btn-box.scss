@@ -1,0 +1,35 @@
+.social-btn-box {
+	padding: 70px 0;
+}
+
+.social-btn-box-body {
+	display: flex;
+	justify-content: center;
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 70px;
+		.text {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: center;
+			color: #555555;
+			margin-top: 15px;
+			transition: all .3s ease;
+		}
+		.icon {
+			transition: all .3s ease;
+		}
+		&:hover {
+			.icon {
+				transform: scale(1.04);
+			}
+			.text {
+				color: var(--main-color);
+			}
+		}
+	}
+}
